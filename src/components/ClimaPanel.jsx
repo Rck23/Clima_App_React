@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Form from './Form';
+import Card from './Card'; 
 
 const ClimaPanel = () =>{
 
-    let urlClima = "https://api.openweathermap.org/data/2.5/weather?appid=3922bcdf20628b4ff50d410c3c6e7e3c&lang=es";
+    let urlClima = `${process.env.REACT_APP_URL_CLIMA}${process.env.REACT_APP_API_KEY}&lang=es`;
     let ciudadUrl = "&q=";
 
-    let urlPronostico = "https://api.openweathermap.org/data/2.5/forecast?appid=3922bcdf20628b4ff50d410c3c6e7e3c&lang=es";
+    let urlPronostico = `${process.env.REACT_APP_URL_PRONOSTICO}${process.env.REACT_APP_API_KEY}&lang=es`;
    
     const [clima, setClima] = useState([]);
     const [pronostico, setPronostico] = useState([]);
@@ -63,6 +64,13 @@ const ClimaPanel = () =>{
             <Form 
                 newLocalizacion = {getLocalizacion}
             />
+
+            <Card            
+                mostrarData = {mostrar}
+                cargandoData = {cargando}
+                clima = {clima}
+                pronostico = {pronostico}
+            /> 
         </React.Fragment>
 
     ); 

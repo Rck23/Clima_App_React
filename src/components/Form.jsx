@@ -19,10 +19,16 @@ const Form = ({newLocalizacion}) =>{
         <div className="container">
             <form onSubmit={onSubmit}>
                 <div className="input-group mx-auto mb-3">
-                    <input type="text" className="form-control" placeholder="Ciudad" onChange= {(e) => setCiudad (e.target.value)}/>
-                    <button className="btn btn-primary input-group.text" type="submit">Buscar</button>
-                </div>
+                    
+                    <span>
+                      <input className="skinny" id="ciudad" type="text" placeholder="Introduzca la ciudad..." onChange= {(e) => setCiudad (e.target.value)}/>
+                      <label for="ciudad">Cuidad</label>
+                    </span>
+                    
 
+                </div>
+                <button className="btn btn-primary input-group.text" type="submit">Buscar</button>
+                
             </form>
         </div>
     );
