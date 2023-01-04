@@ -1,5 +1,5 @@
 body {
-  background-color: #2d3544;
+  background-color: #e2e2e4;
 }
 
 .App {
@@ -11,145 +11,74 @@ body {
 }
 
 .Card {
-  width: 70%;
+  text-align: center;
+ max-width: 70%;
+ align-items: center;
 }
 
-.skinny {
-  display: inline-block;
-  width: 215px;
-  padding: 10px 0 10px 15px;
-  font-family: "Open Sans", sans;
-  font-weight: 400;
-  color: #377D6A;
-  background: #efefef;
-  border: 0;
-  border-radius: 3px;
-  outline: 0;
-  text-indent: 75px;
-  transition: all 0.3s ease-in-out;
-}
-.skinny::-webkit-input-placeholder {
-  color: #efefef;
-  text-indent: 0;
-  font-weight: 300;
-}
-.skinny + label {
-  display: inline-block;
+.card-title{
   position: absolute;
-  transform: translateX(0);
-  top: 0;
-  left: 0;
-  padding: 10px 15px;
-  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
-  transition: all 0.3s ease-in-out;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  overflow: hidden;
+  padding: 20px;
 }
-.skinny + label:before, .skinny + label:after {
-  content: "";
+
+.card-date{
   position: absolute;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-.skinny + label:before {
-  top: 5px;
-  bottom: 5px;
-  background: #377D6A;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-.skinny + label:after {
-  top: 0;
-  bottom: 0;
-  background: #377D6A;
+  padding-left: 20px;
+  margin-top: 60px;
 }
 
-.skinny:focus,
-.skinny:active {
-  color: #377D6A;
-  text-indent: 0;
-  background: #fff;
-}
-.skinny:focus::-webkit-input-placeholder,
-.skinny:active::-webkit-input-placeholder {
-  color: #aaa;
-}
-.skinny:focus + label,
-.skinny:active + label {
-  transform: translateX(-100%);
-}
-.skinny:focus + label:after,
-.skinny:active + label:after {
-  transform: translateX(100%);
+.card-temp{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 260px;
+  font-size: 50px;
 }
 
-.slide-up {
+.card-desc{
+  position: absolute;
+  padding-left: 20px;
+  margin-top: 320px;
+}
+
+
+
+button {
+  margin: 20px;
+}
+.btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
   display: inline-block;
-  width: 215px;
-  padding: 10px 0 10px 15px;
-  font-family: "Open Sans", sans;
-  font-weight: 400;
-  color: #377D6A;
-  background: #efefef;
-  border: 0;
-  border-radius: 3px;
-  outline: 0;
-  text-indent: 80px;
-  transition: all 0.3s ease-in-out;
-}
-.slide-up::-webkit-input-placeholder {
-  color: #efefef;
-  text-indent: 0;
-  font-weight: 300;
-}
-.slide-up + label {
-  display: inline-block;
-  position: absolute;
-  transform: translateX(0);
-  top: 0;
-  left: 0;
-  padding: 10px 15px;
-  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
-  transition: all 0.3s ease-in-out;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  overflow: hidden;
-}
-.slide-up + label:before, .slide-up + label:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-.slide-up + label:before {
-  top: 6px;
-  left: 5px;
-  right: 5px;
-  bottom: 6px;
-  background: #377D6A;
-}
-.slide-up + label:after {
-  top: 0;
-  bottom: 0;
-  background: #377D6A;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
 }
 
-span:nth-child(1) .slide-up {
-  text-indent: 105px;
+/* 2 */
+.btn-2 {
+  background: rgb(255,27,0);
+  background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+  
+  border: none;
+  
 }
-
-span:nth-child(3) .slide-up {
-  text-indent: 125px;
+.btn-2:before {
+  height: 0%;
+  width: 2px;
 }
-
-span:nth-child(1) .slide-up:focus,
-span:nth-child(1) .slide-up:active,
-span:nth-child(3) .slide-up:focus,
-span:nth-child(3) .slide-up:active {
-  text-indent: 0;
-}/*# sourceMappingURL=App.css.map */
+.btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}

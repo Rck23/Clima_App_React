@@ -55,7 +55,7 @@ const Card = ({mostrarData, cargandoData, clima, pronostico}) =>{
                                         <p className="card-date">{fecha}</p>
                                         <h1 className="card-temp">{(clima.main.temp - 273.15).toFixed(1)}ºC</h1>
                                         <p className="card-desc"><img src={iconoUrl} alt="icon"/>{clima.weather[0].description}</p>
-                                       
+                                        <img src="https://i.natgeofe.com/n/7f1dfbc6-baf9-4350-9431-08711a5ab821/mexico-city-travel_2x3.jpg?w=374&h=561" className="img-fluid rounded-start" alt="..."/>
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body text-start mt-2">
@@ -96,7 +96,7 @@ const Card = ({mostrarData, cargandoData, clima, pronostico}) =>{
                         </div>
     
                     ):(
-                        <h2 className="text-light">Sin datos</h2>
+                        <h2 className="text-dark">Sin datos</h2>
                     )
                 }
     
