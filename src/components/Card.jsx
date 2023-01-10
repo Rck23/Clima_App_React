@@ -51,11 +51,11 @@ const Card = ({mostrarData, cargandoData, clima, pronostico}) =>{
                             <div className="card mb-3 mx-auto bg-dark text-light">
                                 <div className="row g-0">
                                     <div className="col-md-4">
-                                        <h3 className="card-title">{clima.name}</h3>
-                                        <p className="card-date">{fecha}</p>
-                                        <h1 className="card-temp">{(clima.main.temp - 273.15).toFixed(1)}ºC</h1>
-                                        <p className="card-desc"><img src={iconoUrl} alt="icon"/>{clima.weather[0].description}</p>
-                                        <img src="https://i.natgeofe.com/n/7f1dfbc6-baf9-4350-9431-08711a5ab821/mexico-city-travel_2x3.jpg?w=374&h=561" className="img-fluid rounded-start" alt="..."/>
+                                        <h3 className=" card-text-img card-title">{clima.name}</h3>
+                                        <p className=" card-text-img card-date">{fecha}</p>
+                                        <h1 className=" card-text-img card-temp">{(clima.main.temp - 273.15).toFixed(1)}ºC</h1>
+                                        <h4 className=" card-text-temp card-desc"><img src={iconoUrl} alt="icon"/>{clima.weather[0].description}</h4>
+                                        <img src="https://w0.peakpx.com/wallpaper/729/362/HD-wallpaper-latinoamerica-cdmx-city-latino-mexico-new-york-nueva-york-ny-pic-torre-latino-tower.jpg" className="img-fluid rounded-start" alt="..."/>
                                     </div>
                                     <div className="col-md-8">
                                         <div className="card-body text-start mt-2">

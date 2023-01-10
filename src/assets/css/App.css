@@ -6,6 +6,11 @@ body {
   text-align: center;
 }
 
+.container{
+  text-align: center;
+
+}
+
 .input-group {
   width: 70%;
 }
@@ -21,6 +26,15 @@ body {
   padding: 20px;
 }
 
+.card-text-temp{
+
+  color:rgb(255,27,0);
+}
+
+.card-text-img{
+
+  color:#000;
+}
 .card-date{
   position: absolute;
   padding-left: 20px;

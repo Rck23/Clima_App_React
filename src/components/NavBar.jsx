@@ -2,7 +2,7 @@ const NavBar =() =>{
     return(
         <nav className="navbar bg-dark text-light mb-5">
             <div className="container-fluid">
-                <h3 className="mx-auto">Tu predicción climatica</h3>
+                <h3 className="mx-auto">Clima App</h3>
             </div>
         </nav>
     );
