@@ -1,7 +1,7 @@
 import './assets/css/App.css';
 import NavBar from './components/NavBar';
 import ClimaPanel from './components/ClimaPanel';
-
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       
       <NavBar />
       <ClimaPanel/>
-
+      <Footer/>
     </div>
   );
 }

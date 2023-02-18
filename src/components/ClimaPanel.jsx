@@ -4,10 +4,10 @@ import Card from './Card';
 
 const ClimaPanel = () =>{
 
-    let urlClima = `${process.env.REACT_APP_URL_CLIMA}${process.env.REACT_APP_API_KEY}&lang=es`;
+    let urlClima = `https://api.openweathermap.org/data/2.5/weather?${process.env.REACT_APP_API_KEY}&lang=es`;
     let ciudadUrl = "&q=";
 
-    let urlPronostico = `${process.env.REACT_APP_URL_PRONOSTICO}${process.env.REACT_APP_API_KEY}&lang=es`;
+    let urlPronostico = `https://api.openweathermap.org/data/2.5/forecast?${process.env.REACT_APP_API_KEY}&lang=es`;
    
     const [clima, setClima] = useState([]);
     const [pronostico, setPronostico] = useState([]);
