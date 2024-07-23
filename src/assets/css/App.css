@@ -1,14 +1,18 @@
 body {
   background-color: #e2e2e4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App {
   text-align: center;
+  flex: 1;
 }
 
-.container{
+.container {
   text-align: center;
-
 }
 
 .input-group {
@@ -17,47 +21,44 @@ body {
 
 .Card {
   text-align: center;
- max-width: 70%;
- align-items: center;
+  max-width: 70%;
+  align-items: center;
 }
 
-.card-title{
+.card-title {
   position: absolute;
   padding: 20px;
 }
 
-.card-text-temp{
-
-  color:rgb(255,27,0);
+.card-text-temp {
+  color: rgb(255, 255, 255);
+  weight: bold;
 }
 
-.card-text-img{
-
-  color:#000;
+.card-text-img {
+  color: #f8f8f8;
 }
-.card-date{
+.card-date {
   position: absolute;
   padding-left: 20px;
   margin-top: 60px;
 }
 
-.card-temp{
+.card-temp {
   position: absolute;
   padding-left: 20px;
-  margin-top: 260px;
+  margin-top: 100px;
   font-size: 50px;
 }
 
-.card-desc{
+.card-desc {
   position: absolute;
   padding-left: 20px;
   margin-top: 320px;
 }
 
-
-
 button {
-  margin: 20px;
+  margin: 10px;
 }
 .btn {
   width: 130px;
@@ -65,42 +66,46 @@ button {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
 /* 2 */
 .btn-2 {
-  background: rgb(255,27,0);
-  background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
-  
+  background: rgb(255, 27, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 27, 0, 1) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+
   border: none;
-  
 }
 .btn-2:before {
   height: 0%;
   width: 2px;
 }
 .btn-2:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
-
-footer{
-  position: relative;
+footer {
+  position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 1%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
